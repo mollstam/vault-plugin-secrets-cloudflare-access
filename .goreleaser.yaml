@@ -3,7 +3,10 @@ before:
     - go mod tidy
     - go test ./...
 builds:
-  - env:
+  - main: ./cmd/vault-plugin-secrets-cloudflare-access
+    id: "vault-plugin-secrets-cloudflare-access"
+    binary: vault-plugin-secrets-cloudflare-access
+    env:
       - CGO_ENABLED=0
     goos:
       - linux
