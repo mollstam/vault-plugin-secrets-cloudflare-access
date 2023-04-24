@@ -46,3 +46,4 @@ vault/plugins
 
 
 !.vscode/launch.json
+dist/
